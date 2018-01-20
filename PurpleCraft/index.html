@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnderGames</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/purplecraft.css">
+</head>
+<script>
+ function pictureChange1()
+    {
+    document.getElementById('games').src="assets/img/vanilla.png";
+    }
+ function pictureChange2()
+    {
+    document.getElementById('games').src="assets/img/arcade.png";
+    }
+ function pictureChange3()
+    {
+    document.getElementById('games').src="assets/img/factions.png";
+    }
+ function pictureChange4()
+    {
+    document.getElementById('games').src="assets/img/skyblock.png";
+    }
+ function copyToClipboard(text) {
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+  }
+</script>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="#home"><img src="assets/img/logo-small.png" alt="logo.png" class="logo"> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="#home" class="page-scroll"><i class="fa fa-home icons"></i>Home </a></li>
+                    <li role="presentation"><a href="#play" class="page-scroll"><i class="fa fa-gamepad icons"></i>Play </a></li>
+                    <li role="presentation"><a href="/forum"><i class="fa fa-comments icons"></i>Forums </a></li>
+                    <li role="presentation"><a href="#shop" id="shop2"><i class="fa fa-shopping-cart icons"></i>Store </a></li>
+                    <li role="presentation"><a href="#vote"><i class="fa fa-check-square-o icons"></i>Vote </a></li>
+                </ul>
+                <button id="ip" onclick="copyToClipboard(document.getElementById('ip').innerHTML)" class="btn btn-info navbar-btn navbar-right" type="button">play.example.net</button>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="jumbotron">
+            <a href="https://minecraft.net" target="_blank"><img src="assets/img/logo.png" alt="logo.png" class="logo"></a>
+            <h1 class="title">PurpleCraft</h1>
+            <p class="subtitle">Ut porttitor, nisi quis elementum suscipit, dolor risus consectetur tellus, et facilisis nulla quam ultricies nisl. Quisque ligula urna, imperdiet sed dapibus in, molestie non ligula. </p>
+            <p><a class="btn btn-info" role="button" href="#play">Learn more »</a></p>
+        </div>
+    </section>
+    <section id="play"></section>
+    <section id="play1">
+        <h1 class="title">Minigames </h1>
+        <p class="subtitle">Nullam maximus vestibulum suscipit. </p>
+        <div>
+            <div class="container">
+                <div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 col-xs-3 col-xs-offset-0">
+                    <div class="row" id="play2">
+                        <div class="col-md-12 col-md-offset-3">
+                            <button onclick="pictureChange1()" class="btn btn-danger" type="button"> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-0 col-sm-2 col-xs-3 col-xs-offset-0">
+                    <div class="row" id="play3">
+                        <div class="col-md-12 col-md-offset-2 col-xs-12">
+                            <button onclick="pictureChange2()" class="btn btn-danger" type="button"> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-md-offset-0 col-sm-2 col-xs-3">
+                    <div class="row" id="play4">
+                        <div class="col-md-11 col-md-offset-2 col-xs-10">
+                            <button onclick="pictureChange3()" class="btn btn-danger" type="button"> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-2 col-xs-3 col-xs-offset-0">
+                    <div class="row" id="play5">
+                        <div class="col-md-7 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                            <button onclick="pictureChange4()" class="btn btn-danger" type="button"> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid dif"><img id="games" src="assets/img/vanilla.png" class="van"></div>
+    </section>
+    <section id="shop"></section>
+    <section id="shop1"></section>
+    <section id="shop3">
+        <div class="jumbotron"><img src="assets/img/buycraft.png" class="buycraft">
+            <p class="sub">Suspendisse sed vehicula dui, eu suscipit quam. Nulla et velit et augue mollis rhoncus sed vel urna. Aliquam et dolor fermentum, faucibus mauris id, fermentum elit. </p>
+            <p><a class="btn btn-info" role="button" href="http://store.endergamez.net">Shop Now » </a></p>
+        </div>
+    </section>
+    <section id="vote">
+        <div class="container">
+            <h1 class="title">Vote For PurpleCraft</h1>
+            <p class="sub">Donec pharetra diam ipsum, sed vestibulum orci tincidunt id. Nam facilisis elit nec nulla ultricies, eget egestas purus rhoncus.</p>
+        </div>
+        <div class="container">
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" type="button">Minecraft-Servers </button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success btn-block" type="button">PlanetMinecraft </button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" type="button">Minecraft-Index </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="#home">Purple<span>Craft </span></a></h3>
+                    <p class="links"><a href="#home">Home</a><strong> · </strong><a href="#play">Play </a><strong> · </strong><a href="/forum">Forums </a><strong> · </strong><a href="http://store.example.net">Shop </a><strong> · </strong><a href="#vote">Vote </a></p>
+                    <p
+                    class="company-name">PurpleCraft © 2017 </p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left">contact@example.net </p>
+                    </div>
+                    <div><i class="fa fa-pencil-square footer-contacts-icon"></i>
+                        <p>Designed by <a href="https://www.youtube.com/channel/UCZc6QFDFGBbboaTgkzAFIhg">Ender </a></p>
+                    </div>
+                    <div><i class="fa fa-code footer-contacts-icon"></i>
+                        <p>Coded by <a href="https://www.youtube.com/channel/UCNfE0E97k3fouJg-2nulLKg">Spimy </a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the PurpleCraft</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet bibendum nunc. Curabitur scelerisque ut tortor euismod dapibus. </p>
+                    <div class="social-links social-icons"><a href="https://www.youtube.com/channel/UCNfE0E97k3fouJg-2nulLKg"><i class="fa fa-youtube-play"></i></a><a href="https://plus.google.com/b/112453632045356328571/112453632045356328571"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://twitter.com/officialspimy"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/officialspimy/"><i class="fa fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/endergames.js"></script>
+    <script src="assets/js/endergames.min.js"></script>
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
