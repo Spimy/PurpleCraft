@@ -7,4 +7,4 @@ This has been made with the use of Bootstrap.
 
 Official Download Page: https://www.spigotmc.org/resources/purplecraft-fully-responsive.51247/
 
-Live Preview: https://zrealtdw.us/purplecraft/
+Live Preview: https://spimy.ga/purplecraft/
